@@ -7,6 +7,7 @@ public class C_GranadeThrow : MonoBehaviour
 {
     public C_GrenadeData GrenadeData;
     public GameObject parentReference;
+    public LayerMask HitMask;
     Rigidbody rb;
 
     // Start is called before the first frame update
@@ -24,10 +25,24 @@ public class C_GranadeThrow : MonoBehaviour
             passedTime += Time.deltaTime;
             yield return null;
         }
+
+        OverlappTrace();
+
         Destroy(parentReference);
     }
     void ThrowObject()
     {
        rb.AddForce(GrenadeData.ThrowStrenght * transform.forward, ForceMode.Impulse);
+    }
+
+    void OverlappTrace()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, GrenadeData.ExplosionRadius,HitMask);
+   
+    foreach(Collider collider in colliders)
+        {
+        
+        
+        }
     }
 }
