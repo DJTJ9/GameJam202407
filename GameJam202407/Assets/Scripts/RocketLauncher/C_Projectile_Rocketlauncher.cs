@@ -8,22 +8,16 @@ public class C_Projectile_Rocketlauncher : MonoBehaviour
 
     public GameObject parentReference;
     [SerializeField]
-    public LayerMask HitMask;
-    public LayerMask AddForceMask;
-    public float ExplosionForce = 700f;
-    public float ExplosionDelay = 0.5f;
-    public float ExplosionRadius = 5f;
-    public float FlyStrenght = 5f;
+    public LayerMask HitMask, AddForceMask;
+    public float ExplosionForce = 700f, ExplosionDelay = 0.5f, ExplosionRadius = 5f, FlyStrenght = 5f;
     Rigidbody rb;
-
-    
+ 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         GetComponent < Collider > ();
         StartCoroutine(Selfdestruct()); //starts explosion timer
-        
     }
     private void OnCollisionEnter(Collision collision)
     {

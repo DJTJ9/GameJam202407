@@ -19,7 +19,7 @@ public class C_RocketLauncher : MonoBehaviour, I_PickUp
     void SpawnProjectile()
     {
         Vector3 SpawnPos = transform.position;
-        SpawnPos += SpawnOffset * transform.forward;
+        SpawnPos -= SpawnOffset * transform.forward;
         Instantiate(ProjectilePref, SpawnPos, Quaternion.Euler(transform.eulerAngles));
     }
 

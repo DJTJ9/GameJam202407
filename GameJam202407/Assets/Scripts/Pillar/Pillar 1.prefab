@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 20, y: 50, z: 20}
+  m_LocalScale: {x: 20, y: 30, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1001542678487678281}
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740257599207914754}
-  m_Mesh: {fileID: -8907757473011522176, guid: 0d58f3bc710ee31449205253bd20d99c, type: 3}
+  m_Mesh: {fileID: -7483989726439642879, guid: 82d59138db92b0848ab15a8872b4808a, type: 3}
 --- !u!23 &8560077603672115604
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.02
-  m_Height: 0.225
+  m_Height: 0.35
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &4691287679745335983
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001542678487678281}
   m_Layer: 0
-  m_Name: Pillar
+  m_Name: Pillar 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
