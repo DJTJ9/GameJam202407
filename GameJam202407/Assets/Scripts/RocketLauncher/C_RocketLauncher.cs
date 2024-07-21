@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class C_RocketLauncher : MonoBehaviour, I_PickUp
 {
+    [SerializeField] private GameObject ProjectilePref;
+    public float SpawnOffset = 0.5f;
+
     public void PickUp(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -13,16 +16,11 @@ public class C_RocketLauncher : MonoBehaviour, I_PickUp
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     void SpawnProjectile()
     {
-
-
+        Vector3 SpawnPos = transform.position;
+        SpawnPos += SpawnOffset * transform.forward;
+        Instantiate(ProjectilePref, SpawnPos, Quaternion.Euler(transform.eulerAngles));
     }
 
 }

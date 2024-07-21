@@ -14,7 +14,7 @@ TagManager:
   - Player
   - Pillar
   - IgnoreCollision
-  - 
+  - AddForce
   - whatIsGround
   - 
   - 

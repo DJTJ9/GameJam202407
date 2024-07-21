@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf41edf832a5758438c9ae8e16dbb2ec, type: 3}
   m_Name: GranadeMaster
   m_EditorClassIdentifier: 
-  ExplosionDelay: 5
+  ExplosionDelay: 2
   ExplosionRadius: 5
   ThrowStrenght: 5
